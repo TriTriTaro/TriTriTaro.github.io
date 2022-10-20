@@ -6,6 +6,8 @@
 
 [肉ペア数列](./mathematics/PorkPair.md)
 
+[蜜柑矢印表記](./mathematics/MCNotation.md)
+
 ## 物理
 
 ## プログラム
