@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expand and Draw</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+
+<body style="margin: 2em;">
+    <header>
+        <h1>Expand and Draw</h1>
+    </header>
+    <main>
+        <div>
+            <label for="ps_input">ペア数列</label>
+            <textarea id="ps_input" name="ps_input" oninput="Refresh()">(0,0)(1,2)(2,1)(1,2)</textarea>
+            <label for="ps_name">表記</label>
+            <select name="ps_name" id="ps_name">
+                <option value="Normal Pair Seq">Normal Pair Seq</option>
+                <option value="Weak Subspecies Pair Seq">Weak Subspecies Pair Seq</option>
+                <option value="Weak Hyper Pair Seq">Weak Hyper Pair Seq</option>
+                <option value="Pork Hydra">Pork Hydra</option>
+            </select>
+            <label for="ps_braket">展開係数</label>
+            <input name="ps_braket" id="ps_braket" type="number" min="0" value="3">
+            <button id="ps_expand" onclick="ExpandFinalLine()">Expand & Draw</button>
+        </div>
+        <canvas id="p5_draw_area"></canvas>
+    </main>
+    <hr>
+    <footer>
+        <div>
+            Normal Pair Seq は <a
+                href="https://googology.fandom.com/ja/wiki/%E3%83%9A%E3%82%A2%E6%95%B0%E5%88%97%E6%95%B0">巨大数研究
+                Wiki:ペア数列数 (Retrieved 2024/01/08)</a> を参考に作成しています。
+        </div>
+        <div>
+            CSSライブラリは<a href="https://milligram.io/">milligram</a>を使用しています。
+            (このライブラリは<a href="https://opensource.org/license/mit/">MIT license</a>で公開されています)
+        </div>
+        <div>
+            描画部は<a href="https://github.com/processing/p5.js/">P5.js</a>を使用しています。
+            (このライブラリは<a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.ja.html"> LGPL-2.1
+                license</a>で公開されています)
+        </div>
+        <div>
+            このページは <a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">Creative Commons
+                Attribution-ShareAlike 3.0 Unported License </a>の下に公開されます。
+        </div>
+        <div>
+
+        </div>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
