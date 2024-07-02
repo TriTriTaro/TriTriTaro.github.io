@@ -4,8 +4,14 @@
 
 ## 巨大数
 
-[肉ペア数列](./mathematics/PorkPair.md)
-
 [蜜柑矢印表記](./mathematics/MCNotation.md)
+
+[蜜柑矢印表記](./mathematics/N3.md)
+
+[未熟行列](./mathematics/ummatrix.md)
+
+[Hydra VS You](https://tritritaro.github.io/Kyodai/Hydra_VS_You/)
+
+[Hydra VS You](https://tritritaro.github.io/Kyodai/Hydra_VS_You/)
 
 ## Processing
