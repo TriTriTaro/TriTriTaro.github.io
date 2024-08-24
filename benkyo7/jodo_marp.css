@@ -1,0 +1,73 @@
+/* @theme hamtheme */
+
+@import 'default';
+
+/*
+base: #FEFEFF
+main: #3a6ea5
+accent: #FF6700
+*/
+
+:root {
+    --base-color: #FEFEFF;
+    --main-color: #3a6ea5;
+    --accent-color: #FF6700;
+}
+
+section {
+    font-family: "BIZ UDPゴシック";
+    /* font-family: "メイリオ"; */
+}
+
+blockquote .code-line {
+    font-family: "Century";
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    color: var(--accent-color);
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: double 6px var(--accent-color);
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p,
+li {
+    color: var(--main-color);
+    font-size: 1.2em;
+}
+
+code,
+code * {
+    font-family: '0xProto Nerd Font';
+}
+
+a {
+    color: var(--main-color);
+    border-bottom: solid 3px var(--accent-color);
+    transition: color 0.1s;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+section::after {
+    font-family: '0xProto Nerd Font';
+    content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
