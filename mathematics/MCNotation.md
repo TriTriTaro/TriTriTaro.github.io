@@ -32,7 +32,7 @@ $a_1 \circlearrowleft^{b_1}a_2 \circlearrowleft^{b_2} \cdots a_{n} \circlearrowl
 
 $$a_1\circlearrowleft a_2 = a_1^{a_2}$$
 
-### $\exist. m \gt 1.a_m = 0$の場合
+### $\exists. m \gt 1.a_m = 0$の場合
 
 $m = \min\{i \mid a_i = 1 \land i \gt 1\}$とし、
 
